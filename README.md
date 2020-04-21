@@ -14,4 +14,4 @@ This is a sample project, demonstrating the use of reactjs for web app front end
 
 # Screenshot
 
-![Screenshot](reactjs-sample-img.png)
+![Screenshot](reactjs-sample.png)
