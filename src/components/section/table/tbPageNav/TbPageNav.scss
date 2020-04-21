@@ -1,0 +1,29 @@
+.tbPageNav_list{
+    display: flex;
+    border: 0.5px solid #cccccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.tbPageNav_list_btn{
+    padding: 10px 15px;
+    border-right: 0.5px solid #cccccc;
+    color: #066dd8;
+    font-size: 16px;
+    &:hover{
+        cursor: pointer;
+        background-color: #b6d9dc;
+    }
+    &:last-child{
+        border-right: none;
+    }
+}
+.tbPageNav_list_btn-active{
+    font-size: 16px;
+    padding: 10px 15px;
+    border-right: 0.5px solid #cccccc;
+    color: #fff;
+    background-color: #3c3cff;
+    &:hover{
+        cursor: pointer;
+    }
+}

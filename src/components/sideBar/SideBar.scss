@@ -1,0 +1,129 @@
+.sideBar{background-color: #4e73e0f2;}
+.sideBar{
+    color: #fff;
+    padding: 0 15px;
+}
+.sideBar_title{
+    border-bottom: 1px solid #ffffff38;
+}
+.sideBar_title-active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    padding: 20px 0;
+    svg{
+        font-size: 30px;
+        margin-right: 10px;
+        transform: rotate(-30deg);
+    }
+    p{
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 800;
+        sup{margin-left: 5px;}
+    }
+}
+.cardMenu{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ffffff38;
+}
+.cardMenu_title{
+    padding-top: 15px;
+    color: #d8d6d6;
+    font-size: 12px;
+}
+.iconZoom_btn{
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 17px;
+    background-color: #6a98d2;
+    margin: 20px auto 0;
+    &:hover{
+        cursor: pointer;
+        background-color: #89b4ea;
+    }
+}
+.sideBar.custom{
+    .sideBar_title-active p{
+        display: none;
+    }
+    .cardMenu_title{
+        text-align: center;
+    }
+    .itemMenu{
+        width: 6.5rem;
+        text-align: center;
+        .itemMenu_arrow{
+            display: none;
+        }
+        .itemMenu_name{
+            display: block;
+        }
+        .itemMenu_icon{
+            margin-right: 0;
+        }
+        .submenu{
+            position: absolute;
+            padding: 0px 15px;
+            left: calc(100% + 30px);
+            top: 0;
+            box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,.15);
+            border-radius: .35rem;
+            z-index: 1;
+            text-align: left;
+        }
+    }
+    .iconZoom_btn{
+        transform: rotate(-180deg);
+    }
+}
+@media screen and (max-width: 768px){
+    .sideBar.custom{
+        max-width: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .sideBar{
+        .sideBar_title-active p{
+            display: none;
+        }
+        .cardMenu_title{
+            text-align: center;
+        }
+        .itemMenu{
+            width: 6.5rem;
+            text-align: center;
+            .itemMenu_arrow{
+                display: none;
+            }
+            .itemMenu_name{
+                display: block;
+            }
+            .itemMenu_icon{
+                margin-right: 0;
+            }
+            .submenu{
+                position: absolute;
+                padding: 0px 15px;
+                left: calc(100% + 30px);
+                top: 0;
+                box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,.15);
+                border-radius: .35rem;
+                z-index: 1;
+                text-align: left;
+            }
+        }
+        .iconZoom_btn{
+            display: none;
+        }
+    }
+}

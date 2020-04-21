@@ -1,0 +1,52 @@
+.tbContainer{
+    padding: 0 15px;
+    background-color: #fff;
+}
+.tbData{
+    border-collapse: collapse;
+    width: 100%;
+    thead {
+        border-bottom: 3px solid #dadada;
+        color: #656565;
+        font-size: 18px;
+        th{
+            text-align: left;
+            padding: 15px 25px 15px 10px;
+            position: relative;
+            user-select: none;
+            &:hover{
+                background-color: #f1f1f1;
+                cursor: pointer;
+            }
+            &::before{
+                content: "\2191";
+                position: absolute;
+                color: #d4d4d4;
+                right: 15px;
+                font-size: 14px;
+                transform: translateY(1px);
+            }
+            &::after{
+                content: "\2191";
+                position: absolute;
+                color: #d4d4d4;
+                right: 7px;
+                font-size: 14px;
+                transform: rotate(180deg) translateY(-3px);
+            }
+            &.asc{
+                &::before{
+                    color: #6f6e6e;
+                }
+            }
+            &.des{
+                &::after{
+                    color: #6f6e6e;
+                }
+            }
+        }
+    }
+}
+.tbData th,td{
+    border: 1px solid #dadada;
+}

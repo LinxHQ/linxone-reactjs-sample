@@ -1,0 +1,38 @@
+.tbSelect_text{
+    color: #868686;
+    font-size: 18px;
+}
+.tbSelect_active{  
+    border: none;
+    outline: none;
+    height: 30px;
+    margin: 0 7px;
+    border-radius: 4px;
+    font-family: cursive;
+    padding: 0 5px;
+    border: 1px solid #d6d6d6;
+    color: gray;
+    transition: all 0.3s;
+    &:focus{
+        box-shadow: 0 2px 0px 3px #97bcc7;
+    }
+}
+.tbSelect_active-custom{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background-color: black;
+        border-bottom: 3px solid black;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        background-color: black;
+        border-bottom: 3px solid black;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+    }
+}

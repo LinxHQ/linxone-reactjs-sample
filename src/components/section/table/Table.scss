@@ -1,0 +1,59 @@
+.table{
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    overflow-x: auto;
+    box-shadow: 0 0 12px 0px #d8d8d8;
+    .pagination{
+        display: flex;
+        border: 1px solid #e6e5e5;
+        border-radius: 5px;
+        overflow: hidden;
+        li{
+            padding: 10px;
+            border-right: 1px solid #e6e5e5;
+            &:hover{
+                background-color: #cee4f7;
+                cursor: pointer;
+            }
+        }
+        li:first-child, li:last-child{
+            padding: 0;
+            border-right: none;
+        }
+        li.disabled a{
+            color: #868686;
+        }
+        li.active {
+            background-color: #4e73df;
+            a {
+                color: white;
+            }
+        }
+    }
+}
+.tbData_title{
+    padding: 15px;
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+    color: #4e73df;
+    font-family: monospace;
+    font-size: 17px;
+}
+.tbData_action{
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tbPageNav{
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tbPageNav_text{
+    color: #868686;
+    font-size: 18px;
+}

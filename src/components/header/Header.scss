@@ -1,0 +1,119 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+}
+.header_showmenu{
+    color: rgb(63, 63, 247);
+    width: 35px;
+    height: 35px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    &:hover{
+        cursor: pointer;
+        background-color: #dddfe0;
+    }
+    @media screen and (max-width: 768px){
+        display: flex;
+    }
+}
+.header_right{
+    display: flex;
+    width: 60%;
+    height: 40px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header_right_alert{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid #d4d4d487;
+}
+.header_right_alert_iconSearch{
+    display: none;
+    margin-right: 30px;
+    color: #d1d3e2;
+    &:hover{cursor: pointer;}
+}
+.alerIcon-margin{
+    margin-right: 30px;
+}
+.header_right_user{
+    padding-left: 30px;
+    position: relative;
+}
+.header_right_user--layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        cursor: pointer;
+    }
+    span{
+        font-size: 14px;
+        color: #808080bd;
+        pointer-events: none;
+    }
+    img{
+        border-radius: 50%;
+        margin-left: 10px;
+        width: 35px;
+    }
+}
+.header_right_user--menu{
+    position: absolute;
+    top: calc(100% + 20px);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0px #d4d4d4;
+    transform: scale(0);;
+    &.show_user{
+        transform: scale(1);
+        transition: all 0.1s;
+    }
+}
+.header_right_user--menu--item{
+    a{
+        display: flex;
+        align-items: center;
+        color: #808080bd;
+        font-size: 0.8em;
+        padding: 5px 30px 5px 20px;
+        &:hover{
+            background-color: #f3f3f3;
+        }
+    }
+    svg{
+        color: #bfbfbfbd;
+    }
+    span:first-child{
+        width: 30%;
+    }
+    span:last-child{
+        width: 70%;
+        white-space: nowrap;
+        color: #000;
+    }
+    &:first-child{
+        padding-top: 5px;
+    }
+    &:nth-last-child(2){
+        padding-bottom: 5px;
+    }
+    &:last-child{
+        border-top: 1px solid #ececec;
+        padding: 5px 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header_right_alert_iconSearch{
+        display: block;
+    }
+}
